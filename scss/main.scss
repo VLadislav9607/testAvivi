@@ -18,7 +18,6 @@
     margin-right: auto;
   }
 
-
   &__list {
     display: flex;
     align-items: center;
@@ -51,7 +50,7 @@
   &__main {
     position: relative;
     padding: 175px 0px;
-    min-height: 90vh;
+    min-height: 896px;
   }
 
   &__main--bg {
@@ -146,7 +145,6 @@
       height: 100%;
       object-fit: cover;
       border-radius: 10px;
-
     }
 
     &__number {
@@ -214,6 +212,7 @@
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
+    max-width: 895px;
   }
 
   &__wrapper__btn {
@@ -227,14 +226,12 @@
     transition: opacity 0.2s ease;
   }
 
-  &_src {
+  &__src {
     vertical-align: top;
     max-width: 100%;
     height: auto;
   }
 }
-
-
 
 /* ------------------------------ product ----------------------- */
 
@@ -252,7 +249,6 @@
 
     & img {
       border-radius: 18px;
-
     }
   }
 
@@ -271,7 +267,7 @@
     max-width: 530px;
   }
 
-  .avatar {
+  & .avatar {
     box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
     background-color: #FFFFFF;
     position: absolute;
@@ -331,8 +327,6 @@
   }
 }
 
-
-
 /* ------------------------------ footer ----------------------- */
 
 .footer {
@@ -363,7 +357,6 @@
   }
 }
 
-
 /* --------------------------------mob---------------------- */
 
 .header__wrapper--mob {
@@ -372,19 +365,19 @@
   right: 0;
   bottom: 0;
   padding: 50px;
-  background-color: #fff;
-  display: none;
+  background-color: #f4f1f1;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  height: 70vh;
   z-index: 98;
   transform: translateX(100%);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .active {
-  display: flex;
   transform: translateX(0%);
 }
 
@@ -571,14 +564,14 @@
   .steps__card {
     flex-basis: 390px;
     text-align: center;
-  }
 
-  .steps__card:nth-child(2) {
-    margin-top: 0;
-  }
+    &:nth-child(2) {
+      margin-top: 0;
+    }
 
-  .steps__card:nth-child(3) {
-    margin-top: 0;
+    &:nth-child(3) {
+      margin-top: 0;
+    }
   }
 
   .video {
@@ -674,19 +667,19 @@
 }
 
 @media (max-width: 768px) {
-  .avatar {
+  .product .avatar {
     left: 50%;
     transform: translateX(-50%);
     bottom: -25%;
     max-width: 296px;
-  }
 
-  .avatar__text {
-    text-align: center;
-  }
+    &__text {
+      text-align: center;
+    }
 
-  .avatar__item {
-    text-align: center;
+    &__item {
+      text-align: center;
+    }
   }
 
   .btn__bem {
@@ -703,44 +696,40 @@
 
   .footer {
     padding: 40px 0px;
-  }
 
-  .footer__logo {
-    margin-bottom: 40px;
-  }
+    &__logo {
+      margin-bottom: 40px;
+    }
 
-  .footer__item:not(last-child) {
-    margin-bottom: 30px;
-  }
+    &__item:not(last-child) {
+      margin-bottom: 30px;
+    }
 
-  .footer__list {
-    text-align: center;
+    &__list {
+      text-align: center;
+    }
   }
 
   .popup__active {
     position: fixed;
-    top: -130px;
+    top: 130px;
     width: 100vw;
-    height: 100vh;
+    min-height: 500px;
   }
 }
 
 @media (max-width: 500px) {
-  .header__content__title {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .product {
-    padding: 30px 0px 120px;
-  }
-
-  .header__content__text {
-    margin-bottom: 25px;
-  }
-
   .header__content {
     max-width: 374px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__text {
+      margin-bottom: 25px;
+    }
   }
 
   .how {
@@ -749,39 +738,45 @@
 
   .steps__card {
     padding-top: 70px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__number {
+      top: -65px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
   }
 
-  .steps__card:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  .product {
+    padding: 30px 0px 150px;
 
-  .steps__card__number {
-    top: -65px;
-  }
+    & .avatar {
+      bottom: -40%;
+      padding: 10px 15px;
+      max-width: 250px;
 
-  .steps__card__text {
-    margin-bottom: 30px;
-  }
-
-  .avatar {
-    padding: 11.5px 30px 11px 30px;
-  }
-
-  .avatar__name {
-    margin-bottom: 5px;
+      &__name {
+      margin-bottom: 5px;
+    }
+    }
   }
 
   .footer {
     padding: 30px 0px;
-  }
 
-  .footer__logo {
-    font-size: 35px;
-  }
+    &__logo {
+      font-size: 35px;
+    }
 
-  .footer__item {
-    font-size: 20px;
-    margin-bottom: 20px;
+    &__item {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   .header__wrapper--mob {

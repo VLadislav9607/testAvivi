@@ -23,12 +23,10 @@ body {
 	max-width: 1400px;
 	padding: 0px 15px;
 	margin: 0 auto;
-}
 
-.container__video {
-	max-width: 1538px;
-	padding: 0px 15px;
-	margin: 0 auto;
+	&__video {
+		max-width: 1538px;
+	}
 }
 
 .title__bem {
@@ -49,10 +47,9 @@ body {
 	border-radius: 4px;
 	text-align: center;
 	transition: all 0.2s ease-in;
-}
 
-.btn__bem:hover {
-	transform: translateY(-2px);
-  background-color: #048863;
-	color: #FFFFFF;
+	&:hover {
+		background-color: #048863;
+		color: #FFFFFF;
+	}
 }

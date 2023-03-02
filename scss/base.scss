@@ -1,0 +1,58 @@
+body {
+	height: 100%;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #424242;
+	line-height: 1.5;
+	position: relative;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1400px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.container__video {
+	max-width: 1538px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.title__bem {
+	font-family: 'Georgia';
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 157%;
+	color: #01996D;
+}
+
+.btn__bem {
+	display: inline-block;
+	color: #FFFFFF;
+	font-weight: 400;
+	padding: 20px 50px;
+	background-color: #01996D;
+	border: 1px solid #01996D;
+	border-radius: 4px;
+	text-align: center;
+	transition: all 0.2s ease-in;
+}
+
+.btn__bem:hover {
+	transform: translateY(-2px);
+  background-color: #048863;
+	color: #FFFFFF;
+}

@@ -260,7 +260,8 @@ body {
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
-    max-width: 895px; }
+    max-width: 895px;
+    max-height: 500px; }
   .video__btn {
     position: absolute;
     left: 50%;
@@ -390,7 +391,7 @@ body {
 .header__list--mob {
   display: flex;
   flex-direction: column;
-  row-gap: 71px; }
+  row-gap: 40px; }
 
 .toggle__button {
   display: none;
@@ -499,7 +500,17 @@ body {
     column-gap: 20px; }
 
   .video__content {
-    max-width: 450px; } }
+    max-width: 450px; }
+
+  .product .avatar {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25%;
+    max-width: 296px; }
+    .product .avatar__text {
+      text-align: center; }
+    .product .avatar__item {
+      text-align: center; } }
 @media (max-width: 1300px) {
   .how {
     padding: 40px 0px; }

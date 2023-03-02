@@ -199,7 +199,6 @@
     margin-bottom: 57px;
     color: #fff;
   }
-
  
   &__wrapper {
     position: relative;
@@ -207,6 +206,7 @@
     overflow: hidden;
     cursor: pointer;
     max-width: 895px;
+    max-height: 500px;
   }
 
   &__btn {
@@ -220,7 +220,6 @@
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 0.2s ease;
   }
-
 
   &__src {
     vertical-align: top;
@@ -388,7 +387,7 @@
 .header__list--mob {
   display: flex;
   flex-direction: column;
-  row-gap: 71px;
+  row-gap: 40px;
 }
 
 .toggle__button {
@@ -532,6 +531,22 @@
   .video__content {
     max-width: 450px;
   }
+
+  .product .avatar {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25%;
+    max-width: 296px;
+
+    &__text {
+      text-align: center;
+    }
+
+    &__item {
+      text-align: center;
+    }
+  }
+
 }
 
 @media (max-width: 1300px) {
